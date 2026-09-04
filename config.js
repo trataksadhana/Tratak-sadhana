@@ -5,5 +5,5 @@ window.TRATAK_CONFIG = {
 
   RAZORPAY_PAYMENT_LINK: "https://rzp.io/rzp/6x95CzRq",
 
-  ZOOM_JOIN_URL: "PASTE_ZOOM_LINK"
+  ZOOM_JOIN_URL: "https://us05web.zoom.us/j/82773554828?pwd=YUrpYlLvym3mAeVzbQU0ruoSqxg79y.1"
 };
