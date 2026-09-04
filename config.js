@@ -3,7 +3,7 @@ window.TRATAK_CONFIG = {
 
   SUPABASE_ANON_KEY: "sb_publishable_ozTy0jxJ8qKQ9WbcAz6IoQ_jgv-86zi",
 
-  RAZORPAY_PAYMENT_LINK: "https://api.razorpay.com/v1/l/subscriptions/sub_TTOppStxKEORqS",
+  RAZORPAY_PAYMENT_LINK: "https://rzp.io/rzp/6x95CzRq",
 
   ZOOM_JOIN_URL: "PASTE_ZOOM_LINK"
 };
