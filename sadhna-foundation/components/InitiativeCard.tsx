@@ -1,0 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight, BookOpen, HeartHandshake, HeartPulse, Trees, Trophy } from "lucide-react";
+import { initiatives } from "../lib/site";
+import { Reveal } from "./Reveal";
+
+const icons = { book: BookOpen, heart: HeartHandshake, "heart-pulse": HeartPulse, trees: Trees, trophy: Trophy } as const;
+export function InitiativeCard({ item, index = 0 }: { item: typeof initiatives[number]; index?: number }) { const Icon = icons[item.icon as keyof typeof icons]; return <Reveal delay={index*.06}><article className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft transition hover:-translate-y-1"><div className="relative aspect-[4/3] overflow-hidden"><Image src={item.image} alt={item.titleEn} fill className="object-cover transition duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw"/><div className="absolute inset-0 bg-gradient-to-t from-slate-950/65 to-transparent"/><div className="absolute bottom-4 left-4 grid h-11 w-11 place-items-center rounded-2xl bg-white text-orange-600 shadow-lg"><Icon size={21}/></div></div><div className="p-6"><p className="text-sm font-bold text-orange-600">{item.titleHi}</p><h3 className="mt-1 font-display text-2xl font-bold text-slate-900">{item.titleEn}</h3><p className="mt-2 text-sm font-semibold text-emerald-700">{item.kicker}</p><p className="mt-3 text-sm leading-6 text-slate-600">{item.description}</p><Link href={`/initiatives/${item.slug}`} className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-orange-700">Learn More <ArrowUpRight size={16}/></Link></div></article></Reveal>; }
