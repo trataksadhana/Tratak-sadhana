@@ -1,1 +1,0 @@
-const C=window.TRATAK_CONFIG;document.getElementById('menu').onclick=()=>document.querySelector('nav').classList.toggle('open');document.getElementById('pay').onclick=()=>{if(C.RAZORPAY_PAYMENT_LINK.includes('PASTE'))document.getElementById('note').textContent='Add your Razorpay payment/subscription link in config.js';else location.href=C.RAZORPAY_PAYMENT_LINK};
